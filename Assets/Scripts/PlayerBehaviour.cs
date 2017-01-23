@@ -11,6 +11,7 @@ public class PlayerBehaviour : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        transform.Translate(new Vector3(0.0f, Input.GetAxis("Vertical") * Time.deltaTime, 0.0f));
+        transform.Translate(new Vector3(0.0f, Input.GetAxis("Vertical") * Time.deltaTime * 5, 0.0f));
+
 	}
 }
